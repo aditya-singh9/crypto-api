@@ -40,7 +40,9 @@ app.get("/crypto", async (req, res) => {
         marketCapital: markCap.trim(),
         circulatingSupply: circSupply.trim(),
       };
+      data.push(info);
     });
+    res.status(200).send(JSON.stringify(data));
   } catch (err) {
     res.send(err);
   }
