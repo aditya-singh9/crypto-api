@@ -8,7 +8,11 @@ app.use(cors());
 
 const port = process.env.PORT || 8000;
 app.get("/", (req, res) => {
-  res.status(200).send("API is running!");
+  res
+    .status(200)
+    .send(
+      "Usage:   \nGo to https://coincrypto-api.herokuapp.com/crypto for all top 100 cryptocurrency data.    To get details of specific cryptocurrency - https://coincrypto-api.herokuapp.com/crypto{cryptoName}"
+    );
 });
 
 app.get("/crypto", async (req, res) => {
