@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res
     .status(200)
     .send(
-      "Usage:   \nGo to https://coincrypto-api.herokuapp.com/crypto for all top 100 cryptocurrency data.    To get details of specific cryptocurrency - https://coincrypto-api.herokuapp.com/crypto{cryptoName}"
+      "Usage:   \nGo to https://crypto-api-rho.vercel.app/crypto for all top 100 cryptocurrency data.    To get details of specific cryptocurrency - https://crypto-api-rho.vercel.app/crypto{cryptoName}"
     );
 });
 
