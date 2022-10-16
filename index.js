@@ -101,3 +101,5 @@ app.get("/crypto/:name", async (req, res) => {
 app.listen(port, () => {
   console.log(`app running on http://localhost:${port}`);
 });
+
+module.exports = app;
